@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'rest_framework',
     'drf_spectacular',
-    'users',
-    'playground',
+    'src.apps.users',
+    'src.apps.playground',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +67,7 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.0.0'
 }
 
-ROOT_URLCONF = 'app.urls'
+ROOT_URLCONF = 'src.urls'
 
 TEMPLATES = [
     {
@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'
+WSGI_APPLICATION = 'src.wsgi.application'
 
 
 # Database

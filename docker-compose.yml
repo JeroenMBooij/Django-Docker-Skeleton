@@ -10,7 +10,7 @@ services:
         build: .
         container_name: django-api
         volumes:
-            - .:/usr/src
+            - .:/usr/project
         networks:
         - djangonetwork
         ports:

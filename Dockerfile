@@ -4,7 +4,7 @@ RUN pip install pipenv
 RUN pip install mysqlclient
 
 ENV PYTHONUNBUFFERED=1
-ENV PROJECT_DIR /usr/src
+ENV PROJECT_DIR /usr/project
 
 WORKDIR ${PROJECT_DIR}
 
