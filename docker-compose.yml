@@ -1,0 +1,42 @@
+version: '3.9'
+
+networks:
+    djangonetwork:
+        name: djangonetwork
+
+services:
+    django-api:
+        image: django-api
+        build: .
+        container_name: django-api
+        volumes:
+            - .:/usr/src
+        networks:
+        - djangonetwork
+        ports:
+        - 7000:8000
+        - 6999:3000
+        entrypoint: ["/bin/sh","-c"]
+        command: 
+        - |
+            python manage.py migrate
+            python manage.py runserver 0.0.0.0:8000
+            python manage.py initadmin
+        depends_on: 
+        - django-db
+
+    django-db:
+        image: mysql:5.7
+        container_name: django-db
+        ports:
+        - "30000:3306"
+        volumes:
+        - ./db_data:/var/lib/mysql
+        restart: always
+        networks:
+        - djangonetwork
+        environment:
+            MYSQL_ROOT_PASSWORD: rootsupersecret1234
+            MYSQL_DATABASE: pythondb
+            MYSQL_USER: django
+            MYSQL_PASSWORD: usersupersecret1234
