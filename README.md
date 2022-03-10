@@ -1,6 +1,6 @@
 # django docker starter
 
-Quickly set up a Django project with a MySql database in Docker with a debugger attached <br>
+Quickly set up a Django project with a MySql database in Docker with a debugger attached in Visual Studio Code.<br>
 
 <h2>Steps to run on your local machine</h2>
 <p>*Requirements </p>
@@ -11,6 +11,7 @@ Quickly set up a Django project with a MySql database in Docker with a debugger 
 <p><b>2.</b> Go to http://localhost:7000/ to view your Django application <br/> (https is not supported we expect you to use a proxyserver with a loadbalancer in production anyway)</p>
 <p><b>2.1</b> this api supports swagger & redoc (http://localhost:7000/api/redoc/)</p>
 <p><b>3.</b> Start developing</p>
+<p><b>3.1</b> Start Run and Debug in Visual Studio Code for setting breakpoints</p>
 
 
 <h2>Package Manager</h2>
