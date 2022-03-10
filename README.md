@@ -7,10 +7,10 @@ Quickly set up a Django project with a MySql database in Docker with a debugger 
 <ul>
   <li>Docker installed</li>
 </ul>
-<p>1. Run docker-compose up -d --build</p>
-<p>2. Go to http://localhost:7000/ to view your Django application <br/> (https is not supported we expect you to use a proxyserver with a loadbalancer in production anyway)</p>
-<p>2.1 this api supports swagger & redoc (http://localhost:7000/api/redoc/)</p>
-<p>3. Start developing</p>
+<p><b>1.<b/> Run docker-compose up -d --build</p>
+<p><b>2.<b/> Go to http://localhost:7000/ to view your Django application <br/> (https is not supported we expect you to use a proxyserver with a loadbalancer in production anyway)</p>
+<p><b>2.1<b/> this api supports swagger & redoc (http://localhost:7000/api/redoc/)</p>
+<p><b>3.<b/> Start developing</p>
 
 
 <h2>Package Manager</h2>
