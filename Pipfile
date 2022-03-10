@@ -8,6 +8,9 @@ django = "*"
 ptvsd = "*"
 djangorestframework = "*"
 drf-spectacular = "*"
+markdown = "*"
+django-filter = "*"
+django-ninja = "*"
 
 [dev-packages]
 

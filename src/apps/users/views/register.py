@@ -5,4 +5,4 @@ from django.http import HttpResponse
 class RegisterView(APIView):
 
     def post(self, request):
-        return HttpResponse("fuck off")
+        return HttpResponse("this doesn't do anything yet")
